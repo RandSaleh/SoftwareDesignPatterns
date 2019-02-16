@@ -52,7 +52,7 @@ public class StockGrabber implements Subject  {
 
     public void setApplePrice(double applePrice) {
         this.applePrice = applePrice;
-        update();
+        update(applePrice, googlePrice, amazonPrice);
     }
 
     public double getGooglePrice() {
@@ -61,14 +61,19 @@ public class StockGrabber implements Subject  {
 
     public void setGooglePrice(double googlePrice) {
         this.googlePrice = googlePrice;
+        update(applePrice, googlePrice, amazonPrice);
+
     }
 
     public double getAmazonPrice() {
         return amazonPrice;
+
     }
 
     public void setAmazonPrice(double amazonPrice) {
         this.amazonPrice = amazonPrice;
+        update(applePrice, googlePrice, amazonPrice);
+
     }
     
 }
