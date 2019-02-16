@@ -9,14 +9,6 @@ package observerpattern;
  *
  * @author actc
  */
-public interface Subject {
-    
-  
-  public   void register(Observer o);
-  public void deRegister(Observer o);
-  public  void update(double applePrice,double googlePrice,double amazonPrice);
+public class StockObserver {
     
 }
-
-
-
