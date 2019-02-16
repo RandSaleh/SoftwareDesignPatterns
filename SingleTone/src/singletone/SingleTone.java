@@ -5,17 +5,15 @@
  */
 package singletone;
 
-/**
- *
- * @author actc
- */
 public class SingleTone {
+private static SingleTone instance = new SingleTone() ;
+private SingleTone(){
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+}
+
+public static SingleTone accessSingleTone(){
+return instance;
+}
+
+ 
 }
