@@ -5,10 +5,34 @@
  */
 package prototype;
 
-/**
- *
- * @author actc
- */
-public class Sheep {
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class Sheep implements Animal{
+
+    @Override
+    public Animal makeCopy() {
+        Sheep sheepObj = null;
+        
+        try {
+            sheepObj = (Sheep) super.clone();
+            
+            
+           
+        } catch (CloneNotSupportedException ex) {
+            Logger.getLogger(Sheep.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return sheepObj ; 
+        
+        
+    }
+    
+    public String toString(){
+    return " Hello!, Iam Dolly ";
+    }
+    
+    
+    
     
 }

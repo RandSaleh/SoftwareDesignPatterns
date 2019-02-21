@@ -9,6 +9,14 @@ package prototype;
  *
  * @author actc
  */
-public class cloneFactory {
+public class CloneFactory {
+    
+    /// This Factory can recieve any subclass from animal and call the mentod in this interface 
+    
+    public Animal getClone (Animal sampleAnimal){
+    return sampleAnimal.makeCopy();
+    
+    }
+    
     
 }
