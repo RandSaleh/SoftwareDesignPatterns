@@ -1,12 +1,12 @@
 
 package prototype;
 
+import java.util.ArrayList;
+
 public class protoTypeDriver {
 
-    public static void main(String[] args) {
-        
+    public static void main(String[] args) {        
        CloneFactory factory = new CloneFactory (); 
-        
         Sheep sally = new Sheep ();
         Sheep clonedSally = (Sheep)factory.getClone(sally);
         System.out.println("The origin  : "+ sally);
@@ -18,7 +18,6 @@ public class protoTypeDriver {
         System.out.println("Creating clone for a dog class ");
         Dog originDog= new Dog();
         Dog copyDog = (Dog) factory.getClone(originDog);
-        
         System.out.println("The origin  : "+ originDog);
         System.out.println("The cloned  : "+ copyDog);
         System.out.println("Sally HashCode: " + System.identityHashCode(System.identityHashCode(originDog)));
