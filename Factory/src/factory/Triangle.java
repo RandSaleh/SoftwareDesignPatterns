@@ -9,13 +9,11 @@ package factory;
  *
  * @author actc
  */
-public class Factory {
+public class Triangle implements Shape {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    @Override
+    public void drow() {
+        System.out.println("Triangle is drown ");
     }
     
 }
