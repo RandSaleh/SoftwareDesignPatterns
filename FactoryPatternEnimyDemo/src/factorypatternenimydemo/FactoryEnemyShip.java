@@ -1,14 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package factorypatternenimydemo;
 
-/**
- *
- * @author actc
- */
 public class FactoryEnemyShip {
+   
+    public EnemyShip getEnemyShip (String name){
+    
+    if (name ==null )return null ;
+    
+    if (name.equals("U"))return new UFOEnemyShip();
+    if (name.equals("R")) return new RocketEnemyShip();
+    
+    return null; 
+    
+    
+    }
+    
     
 }
